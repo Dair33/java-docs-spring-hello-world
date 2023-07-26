@@ -13,7 +13,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	//@RequestMapping("/")
+	@RequestMapping("/api")
 	String sayHello() {
 		return "Hello World this is an update number 3 hopefully with working react ADADASDASDASD";
 	}
