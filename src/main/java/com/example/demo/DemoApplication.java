@@ -15,8 +15,7 @@ public class DemoApplication {
 
 	@RequestMapping("/")
 	String sayHello() {
-		 private static final Logger logger = LoggerFactory.getLogger(UserController.class);
-			logger.info("This is a test log to make sure this works");
+
 		return "Hello World this is an update number 3 hopefully with working react ADADASDASDASD";
 	
 	}
