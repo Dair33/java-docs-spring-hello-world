@@ -11,6 +11,7 @@ public class DemoApplication {
  private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		logger.info("This is a test log to make sure this works")
 	}
 
 	@RequestMapping("/api")
