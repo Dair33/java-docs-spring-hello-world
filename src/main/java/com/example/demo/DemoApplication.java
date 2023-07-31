@@ -44,7 +44,4 @@ public class DemoApplication {
 
 }
 
-interface TodoRepository extends CrudRepository<Todo, Long> {
-
-}
 }
