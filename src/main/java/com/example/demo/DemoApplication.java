@@ -35,4 +35,16 @@ public class DemoApplication {
         String name = body.get("name");
         logger.info("Received name: {}", name);
     }
+	 @Bean
+    ApplicationListener<ApplicationReadyEvent> basicsApplicationListener(TodoRepository repository) {
+        return event->repository
+            .saveAll(Stream.of("A", "B", "C").map(name->new Todo("configuration", "congratulations, you have set up correctly!", true)).toList())
+            .forEach(System.out::println);
+    }
+
+}
+
+interface TodoRepository extends CrudRepository<Todo, Long> {
+
+}
 }
