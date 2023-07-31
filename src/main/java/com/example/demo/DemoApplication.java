@@ -27,7 +27,7 @@ public class DemoApplication {
 		//return "Hello World this is an update number 3 hopefully with working react ADADASDASDASD";
 	
 	}
-	  @PostMapping("/name")
+	@PostMapping("/name")
     public void postName(@RequestBody Map<String, String> body) {
         String name = body.get("name");
         logger.info("Received name: {}", name);

@@ -27,6 +27,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+	<dependency>
+        <groupId>com.microsoft.azure</groupId>
+        <artifactId>azure-spring-boot-starter-sql-server</artifactId>
+    </dependency>
 	</dependencies>
 
 	<build>
