@@ -35,3 +35,4 @@ public class DemoApplication {
         logger.info("Received name {}", name);
     }
 }
+// in application .properties must use 12.2 therefore authentication mode is correct
