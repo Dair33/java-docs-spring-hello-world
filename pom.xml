@@ -26,12 +26,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			
 		</dependency>
 
 	<dependency>
         <groupId>com.microsoft.azure</groupId>
-        <artifactId>azure-spring-boot-starter-sql-server</artifactId>
+        <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
 	</dependencies>
 
 	<build>
