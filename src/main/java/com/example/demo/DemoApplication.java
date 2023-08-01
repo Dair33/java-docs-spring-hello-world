@@ -19,10 +19,12 @@ import java.util.Map;
 public class DemoApplication {
 	 private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
 	public static void main(String[] args) {
+		 System.setProperty("AZURE_CLIENT_ID", "39eacea3-2a44-42c6-8292-19b931ee9559");
+        System.setProperty("AZURE_CLIENT_SECRET", "Rdb8Q~vvVTIM6BQaFjxrLfUGrLeFH0f3HwC_Hddf");
+        System.setProperty("AZURE_TENANT_ID", "62e43eb0-3ee1-441e-aada-1499b16d95e2");
+
 		SpringApplication.run(DemoApplication.class, args);
-		System.getenv().put("AZURE_CLIENT_ID", "39eacea3-2a44-42c6-8292-19b931ee9559");
-System.getenv().put("AZURE_CLIENT_SECRET", "Rdb8Q~vvVTIM6BQaFjxrLfUGrLeFH0f3HwC_Hddf");
-System.getenv().put("AZURE_TENANT_ID", "62e43eb0-3ee1-441e-aada-1499b16d95e2");
+
 	}
 
 	@RequestMapping("/name")
