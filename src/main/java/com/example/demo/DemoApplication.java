@@ -32,7 +32,7 @@ public class DemoApplication {
 	@PostMapping("/name")
     public void postName(@RequestBody Map<String, String> body) {
         String name = body.get("name");
-        logger.info("Received nme {}", name);
+        logger.info("Received me {}", name);
     }
 }
 // in application .properties must use 12.2 therefore authentication mode is correct
