@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 
 
-@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
+@SpringBootApplication(exclude={dataSourceScriptDatabaseInitializer})
 @RestController
 public class DemoApplication {
 	 private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
