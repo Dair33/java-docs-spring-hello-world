@@ -25,7 +25,6 @@ public class DemoApplication {
 
 	@RequestMapping("/name")
 	void sayHello() {
-	
         logger.info("This is a test log to make sure this works");
 		//return "Hello World this is an update number 3 hopefully with working react ADADASDASDASD";
 	
