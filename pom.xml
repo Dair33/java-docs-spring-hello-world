@@ -16,6 +16,23 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
+<dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.azure.spring</groupId>
+      <artifactId>spring-cloud-azure-dependencies</artifactId>
+      <version>4.9.0</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
+
+<dependency>
+  <groupId>com.azure.spring</groupId>
+  <artifactId>spring-cloud-azure-starter</artifactId>
+</dependency>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
