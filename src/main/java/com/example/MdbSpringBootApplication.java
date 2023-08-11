@@ -21,8 +21,8 @@ import java.util.Map;
 public class MdbSpringBootApplication implements CommandLineRunner {
     private static final Logger logger = LoggerFactory.getLogger(MdbSpringBootApplication.class);
       
-    @Autowired
-    ItemRepository groceryItemRepo;
+  //  @Autowired
+   // ItemRepository groceryItemRepo;
     
     public static void main(String[] args) {
         SpringApplication.run(MdbSpringBootApplication.class, args);

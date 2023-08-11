@@ -1,12 +1,12 @@
 package com.example.mdbspringboot.model;
 
-
+import java.util.List;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
-import scala.collection.immutable.List;
+
 
 public interface ItemRepository extends MongoRepository<GroceryItem, String> {
     
