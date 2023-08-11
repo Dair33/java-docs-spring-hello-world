@@ -17,7 +17,7 @@ import java.util.Map;
 
 
 @SpringBootApplication 
-@EnableMongoRepositories
+@EnableMongoRepositories(basePackages = "com.example.mdbspringboot.repository")
 @RestController
 public class MdbSpringBootApplication implements CommandLineRunner {
     private static final Logger logger = LoggerFactory.getLogger(MdbSpringBootApplication.class);
