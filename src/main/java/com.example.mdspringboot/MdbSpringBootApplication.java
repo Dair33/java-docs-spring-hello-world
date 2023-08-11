@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 
 
-
+@SpringBootApplication 
 @EnableMongoRepositories
 @RestController
 public class MdbSpringBootApplication implements CommandLineRunner {
