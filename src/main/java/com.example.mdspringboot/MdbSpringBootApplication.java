@@ -17,7 +17,7 @@ import java.util.Map;
 
 
 @SpringBootApplication 
-@EnableMongoRepositories(basePackages = "com.example.mdbspringboot.repository")
+@EnableMongoRepositories
 @RestController
 public class MdbSpringBootApplication implements CommandLineRunner {
     private static final Logger logger = LoggerFactory.getLogger(MdbSpringBootApplication.class);
@@ -30,7 +30,7 @@ public class MdbSpringBootApplication implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) {
+    public void run(String[] args) {
         // Logic to be run on application start, for example:
         // groceryItemRepo.save(new GroceryItem("1", "Apple", 10, "Fruits"));
     }
