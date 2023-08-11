@@ -25,6 +25,17 @@ public class DemoApplication {
 
 	}
 
+@EnableMongoRepositories
+public class MdbSpringBootApplication implements CommandLineRunner{
+    
+    @Autowired
+    ItemRepository groceryItemRepo;
+    
+    public static void main(String[] args) {
+        SpringApplication.run(MdbSpringBootApplication.class, args);
+    }
+}
+
 	@RequestMapping("/hello")
 	String sayHello() {
         logger.info("This is a test log tomake sure this works");
