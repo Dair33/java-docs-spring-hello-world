@@ -46,6 +46,7 @@ public class MdbSpringBootApplication implements CommandLineRunner {
     @PostMapping("/name")
     public void postName(@RequestBody Map<String, String> body) {
         String name = body.get("name");
-        logger.info("Received me {}", name);
+        groceryItemRepo.save(new GroceryItem("1", name, 10, "Fruits"));
+        logger.info("Received me {}", groceryItemRepo.findItemByName(name));
     }
 }
