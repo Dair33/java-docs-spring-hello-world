@@ -35,7 +35,7 @@ public class MdbSpringBootApplication implements CommandLineRunner {
     @Override
     public void run(String[] args) {
         // Logic to be run on application start, for example:
-         groceryItemRepo.save(new GroceryItem("1", "Apple", 10, "Fruits"));
+         groceryItemRepo.save(new GroceryItem("10", "Apple", 10, "Fruits"));
     }
     @RequestMapping("/hello")
     String sayHello() {
@@ -46,7 +46,7 @@ public class MdbSpringBootApplication implements CommandLineRunner {
     @PostMapping("/name")
     public void postName(@RequestBody Map<String, String> body) {
         String name = body.get("name");
-        groceryItemRepo.save(new GroceryItem("1", name, 10, "Fruits"));
-        logger.info("Received me {}", groceryItemRepo.findItemByName(name));
+        //groceryItemRepo.save(new GroceryItem("1", name, 10, "Fruits"));
+        logger.info("Received me {}", name);
     }
 }
