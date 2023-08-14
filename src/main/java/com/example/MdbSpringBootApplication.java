@@ -6,6 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.mdbspringboot.model.GroceryItem;
+import com.example.mdbspringboot.model.ItemRepository;
+
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -21,8 +25,8 @@ import java.util.Map;
 public class MdbSpringBootApplication implements CommandLineRunner {
     private static final Logger logger = LoggerFactory.getLogger(MdbSpringBootApplication.class);
       
-  //  @Autowired
-   // ItemRepository groceryItemRepo;
+    @Autowired
+    ItemRepository groceryItemRepo;
     
     public static void main(String[] args) {
         SpringApplication.run(MdbSpringBootApplication.class, args);
@@ -31,7 +35,7 @@ public class MdbSpringBootApplication implements CommandLineRunner {
     @Override
     public void run(String[] args) {
         // Logic to be run on application start, for example:
-        // groceryItemRepo.save(new GroceryItem("1", "Apple", 10, "Fruits"));
+         groceryItemRepo.save(new GroceryItem("1", "Apple", 10, "Fruits"));
     }
     @RequestMapping("/hello")
     String sayHello() {
